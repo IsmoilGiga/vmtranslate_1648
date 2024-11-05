@@ -8,7 +8,7 @@ from googletrans import Translator
 
 TELEGRAM_API_TOKEN = '7624657726:AAFS2ceg9Mfcqh9Vgp2uh25toj3f9os56o0'
 
-bot = Bot(token=TELEGRAM_API_TOKEN)
+bot = Bot(token=TELEGRAM_API_TOKEN, proxy='http://proxy.server:3128')
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
